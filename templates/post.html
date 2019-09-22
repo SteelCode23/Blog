@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+  <!-- Main Content -->
+  {% block header %}
+    <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-md-2">
+          <div class="site-heading">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+ {% endblock %}
+  {% block content %}
+   {{post  | safe }}
+
+ {% endblock %}

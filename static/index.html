@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+  <!-- Main Content -->
+  {% block header %}
+    <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-md-2">
+          <div class="site-heading">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  
+ {% endblock %}
+  {% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="/post?Post_id={{post[0].id}}">
+            <h2 class="post-title">
+              {{post[0].header}}
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Steel Ricciotti</a>
+            on {{post[0].date}}</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="/post?Post_id={{post[1].id}}">
+            <h2 class="post-title">
+              {{post[1].header}}
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Steel Ricciotti</a>
+            on {{post[1].date}}</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="/post?Post_id={{post[2].id}}">
+            <h2 class="post-title">
+              {{post[2].header}}
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Steel Ricciotti</a>
+            on {{post[2].date}}</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              {{post[2].header}}
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Steel Ricciotti</a>
+            on {{post[3].date}}</p>
+        </div>
+        <hr>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ {% endblock %}
